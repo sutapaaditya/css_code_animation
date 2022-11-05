@@ -1,0 +1,89 @@
+* { margin: 0; padding: 0;}
+
+.main {
+  /* padding: 30px; */
+  background-color: #c4c4c4;
+  height: 100vh;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: 15s infinite anotherMagic;
+}
+
+.main p {
+  margin-left: 10%;
+  display: inline-block;
+  background-color: #e76d83;
+  padding: 20px;
+  /* transform-origin: -100% 50%; */
+  /* transform-origin: bottom right; */
+  /* transform: rotate(-25deg); */
+  /* animation-duration: 3s; */
+  /* animation-name: slidein; */
+  /* animation-iteration-count: 3; */
+
+  transform-origin: bottom right 60px;
+  animation: 5s 1 bigMagic;
+  
+}
+
+
+
+/* .main p:hover { */
+/*   transform-origin: -100% 50%; */
+/*   transform: rotate(45deg); */
+/* } */
+
+@keyframes anotherMagic {
+  0% {
+    opacity: 0.01;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes magic {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+  
+  50% {
+    width: 250%;
+  }
+
+  75% {
+    width: 200%;
+  }
+
+  90% {
+    width: 150%;
+  }
+
+  100% {
+    margin-left: 10%;
+    width: 100%;
+  }
+}
+
+@keyframes bigMagic {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
